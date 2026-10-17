@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { COLOURS, DRAW_TIME_SECONDS } from '../lib/gameRules'
+import useSwipe from '../lib/useSwipe'
 
 const SIZE = 600
 
@@ -7,10 +8,10 @@ export default function DrawCanvas({ item, swipesAgo, onSubmit }) {
   const canvasRef = useRef(null)
   const painting = useRef(false)
   const submitted = useRef(false)
-  const [colour, setColour] = useState(COLOURS[0])
+  const [colourIdx, setColourIdx] = useState(0)
+  const colour = COLOURS[colourIdx]
   const [secondsLeft, setSecondsLeft] = useState(DRAW_TIME_SECONDS)
 
-  // Kept in a ref so a parent re-render never restarts the countdown.
   const submitRef = useRef(onSubmit)
   submitRef.current = onSubmit
 
@@ -59,9 +60,7 @@ export default function DrawCanvas({ item, swipesAgo, onSubmit }) {
     ctx.stroke()
   }
 
-  const stop = () => {
-    painting.current = false
-  }
+  const stop = () => { painting.current = false }
 
   const done = () => {
     if (submitted.current) return
@@ -69,13 +68,14 @@ export default function DrawCanvas({ item, swipesAgo, onSubmit }) {
     onSubmit(canvasRef.current.toDataURL('image/png'))
   }
 
+  // Swipe up on the tools strip = submit · swipe down = clear
+  const toolsSwipe = useSwipe({ onUp: done, onDown: fillWhite })
+
   return (
     <div className="draw">
       <div className="draw-head">
         <p className="prompt">
-          <strong>
-            {swipesAgo} swipe{swipesAgo === 1 ? '' : 's'} ago
-          </strong>{' '}
+          <strong>{swipesAgo} swipe{swipesAgo === 1 ? '' : 's'} ago</strong>{' '}
           you liked a <strong>{item.type}</strong>. Draw it to keep it.
         </p>
         <span className={`clock ${secondsLeft <= 10 ? 'urgent' : ''}`}>{secondsLeft}</span>
@@ -92,24 +92,24 @@ export default function DrawCanvas({ item, swipesAgo, onSubmit }) {
         onPointerCancel={stop}
       />
 
-      <div className="tools">
-        {COLOURS.map((c) => (
-          <button
-            key={c}
-            className={`swatch ${c === colour ? 'on' : ''}`}
-            style={{ background: c }}
-            aria-label={`colour ${c}`}
-            onClick={() => setColour(c)}
+      <div className="tools-wrap">
+        <div className="colour-slider-wrap">
+          <span className="colour-dot" style={{ background: colour }} />
+          <input
+            type="range"
+            className="colour-slider"
+            min={0}
+            max={COLOURS.length - 1}
+            value={colourIdx}
+            onChange={(e) => setColourIdx(Number(e.target.value))}
+            style={{ background: `linear-gradient(to right, ${COLOURS.join(', ')})` }}
           />
-        ))}
-        <button className="clear" onClick={fillWhite}>
-          Clear
-        </button>
+        </div>
+        <div className="draw-swipe-zone" {...toolsSwipe}>
+          <span className="draw-hint-up">↑ submit</span>
+          <span className="draw-hint-down">↓ clear</span>
+        </div>
       </div>
-
-      <button className="primary" onClick={done}>
-        Done
-      </button>
     </div>
   )
 }

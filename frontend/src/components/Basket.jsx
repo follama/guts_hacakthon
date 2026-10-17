@@ -1,10 +1,12 @@
 import { assetUrl } from '../lib/api'
+import useSwipe from '../lib/useSwipe'
 
 export default function Basket({ items, onClose }) {
   const total = items.reduce((sum, item) => sum + item.price, 0)
+  const swipe = useSwipe({ onDown: onClose || undefined })
 
   return (
-    <div className="basket">
+    <div className="basket" {...swipe}>
       {items.length === 0 && <p className="hint">Nothing remembered yet.</p>}
 
       <ul className="basket-list">
@@ -29,9 +31,10 @@ export default function Basket({ items, onClose }) {
       </p>
 
       {onClose && (
-        <button className="primary" onClick={onClose}>
-          Keep swiping
-        </button>
+        <div className="swipe-hint swipe-hint--down">
+          <span>swipe down to keep swiping</span>
+          <span className="swipe-arrow">↓</span>
+        </div>
       )}
     </div>
   )

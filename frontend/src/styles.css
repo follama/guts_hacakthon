@@ -108,7 +108,7 @@ button:disabled { opacity: 0.35; cursor: default; }
 .primary:hover:not(:disabled) { background: var(--blue-dark); }
 
 .hint {
-  color: var(--muted);
+  color: var(--blue-dark);
   font-size: clamp(14px, 4vw, 16px);
   text-align: center;
   margin-top: 16px;
@@ -210,26 +210,77 @@ button:disabled { opacity: 0.35; cursor: default; }
   border: 2px dashed var(--border);
 }
 
-.tools {
+.tools-wrap {
+  margin: 12px 0;
+}
+
+.colour-slider-wrap {
   display: flex;
   align-items: center;
-  gap: 10px;
-  margin: 12px 0;
-  flex-wrap: wrap;
+  gap: 12px;
+  padding: 6px 0;
 }
 
-.swatch {
-  width: clamp(30px, 8vw, 36px);
-  height: clamp(30px, 8vw, 36px);
-  padding: 0;
+.colour-dot {
+  width: clamp(28px, 7vw, 34px);
+  height: clamp(28px, 7vw, 34px);
   border-radius: 50%;
   border: 2px solid var(--border);
-  box-shadow: 0 0 0 1px var(--border);
+  box-shadow: 0 0 0 3px var(--blue-dark);
   flex-shrink: 0;
+  display: block;
 }
 
-.swatch.on { box-shadow: 0 0 0 3px var(--blue-dark); border-color: var(--blue-dark); }
-.clear { margin-left: auto; padding: 8px 14px; font-size: clamp(13px, 3.5vw, 15px); }
+.colour-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  flex: 1;
+  height: 14px;
+  border-radius: 999px;
+  border: 2px solid var(--border);
+  outline: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.colour-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #fff;
+  border: 3px solid var(--blue-dark);
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+}
+
+.colour-slider::-moz-range-thumb {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #fff;
+  border: 3px solid var(--blue-dark);
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+}
+
+.draw-swipe-zone {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 4px;
+  min-height: 56px;
+  cursor: ns-resize;
+  user-select: none;
+}
+
+.draw-hint-up,
+.draw-hint-down {
+  font-size: clamp(15px, 4.5vw, 24px);
+  color: var(--blue-darkest);
+  font-weight: 700;
+}
 
 /* ── Result ───────────────────────────────────────────────── */
 .compare { display: flex; gap: 12px; }
@@ -296,6 +347,88 @@ button:disabled { opacity: 0.35; cursor: default; }
   color: var(--blue-darkest);
   padding-top: 8px;
   border-top: 2px solid var(--border);
+}
+
+/* ── Welcome page ─────────────────────────────────────────── */
+.welcome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100dvh;
+  padding: 32px 24px 48px;
+  text-align: center;
+}
+
+.welcome-pre {
+  margin: 0 0 8px;
+  font-size: clamp(36px, 12vw, 54px);
+  font-weight: 700;
+  color: var(--blue-dark);
+  letter-spacing: 6px;
+  text-transform: uppercase;
+}
+
+.welcome-logo {
+  width: clamp(260px, 82vw, 400px);
+  height: auto;
+  mix-blend-mode: multiply; /* makes the white bag background vanish on the blue bg */
+  margin: 0 0 12px;
+}
+
+.welcome-tagline {
+  margin: 0 0 32px;
+  font-size: clamp(16px, 5vw, 20px);
+  color: var(--blue-dark);
+  letter-spacing: 0.02em;
+}
+
+.swipe-hint {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  color: var(--blue-mid);
+  font-size: clamp(14px, 4vw, 16px);
+  animation: bob 1.4s ease-in-out infinite;
+}
+
+.swipe-hint--down {
+  animation: bob-down 1.4s ease-in-out infinite;
+}
+
+.swipe-arrow {
+  font-size: clamp(28px, 8vw, 36px);
+  line-height: 1;
+}
+
+.basket-hint {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--blue-mid);
+  font-size: clamp(14px, 4vw, 16px);
+  animation: bob-down 1.4s ease-in-out infinite;
+  cursor: default;
+}
+
+@keyframes bob {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-6px); }
+}
+
+@keyframes bob-down {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(6px); }
+}
+
+/* ── Transition page ───────────────────────────────────────── */
+.transition-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100dvh;
+  padding: 24px;
 }
 
 /* ── Safe area for notched phones ─────────────────────────── */

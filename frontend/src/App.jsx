@@ -5,12 +5,15 @@ import SwipeDeck from './components/SwipeDeck'
 import DrawCanvas from './components/DrawCanvas'
 import JudgeResult from './components/JudgeResult'
 import Basket from './components/Basket'
+import WelcomePage from './components/WelcomePage'
+import TransitionPage from './components/TransitionPage'
+import useSwipe from './lib/useSwipe'
 
 // swipe -> draw -> judging -> result -> swipe ..., with basket on demand.
 export default function App() {
   const [deck, setDeck] = useState(null)
   const [loadError, setLoadError] = useState(null)
-  const [phase, setPhase] = useState('swipe')
+  const [phase, setPhase] = useState('welcome')
   const [pending, setPending] = useState([])
   const [basket, setBasket] = useState([])
   const [swipeCount, setSwipeCount] = useState(0)
@@ -72,13 +75,23 @@ export default function App() {
     setPhase('result')
   }
 
+  // Must be called before any early returns (Rules of Hooks)
+  const headerSwipe = useSwipe({ onDown: phase === 'swipe' ? () => setPhase('basket') : undefined })
+
+  if (phase === 'welcome') return <WelcomePage onStart={() => setPhase('transition')} />
+  if (phase === 'transition') return <TransitionPage onContinue={() => setPhase('swipe')} />
+
   return (
     <main className="app">
-      <header>
+      <header {...headerSwipe}>
         <h1>FitSketch</h1>
-        <button className="basket-btn" disabled={phase !== 'swipe'} onClick={() => setPhase('basket')}>
-          Basket {basket.length}
-        </button>
+        {phase === 'swipe' && (
+          <div className="basket-hint">
+            <span>🛍️</span>
+            <span>Basket {basket.length > 0 ? `(${basket.length})` : ''}</span>
+            <span className="swipe-arrow" style={{ fontSize: '18px' }}>↓</span>
+          </div>
+        )}
       </header>
 
       {loadError && <p className="hint">Can&rsquo;t reach the backend: {loadError}</p>}
