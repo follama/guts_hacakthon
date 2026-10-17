@@ -8,6 +8,7 @@ import random
 from dataclasses import dataclass
 from pathlib import Path
 
+#come back to edit this cause idk about all that
 PLACEHOLDER_ROASTS = [
     "Bold of you to call that a jacket.",
     "Picasso would be confused, and he invented confused.",

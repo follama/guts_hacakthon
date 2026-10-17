@@ -80,7 +80,7 @@ export default function SwipeDeck({ items, onSwipe }) {
         </article>
       </div>
 
-      <p className="hint">Swipe right to keep, left to bin</p>
+      <p className="hint">Swipe right to add to basket, left to skip</p>
     </>
   )
 }

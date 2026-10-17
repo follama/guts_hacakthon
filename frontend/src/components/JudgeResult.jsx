@@ -16,7 +16,11 @@ export default function JudgeResult({ result }) {
         </figure>
       </div>
 
-      <p className={`verdict ${passed ? 'pass' : 'fail'}`}>{passed ? 'Pass' : 'Fail'}</p>
+      <p className={`verdict ${passed ? 'pass' : 'fail'}`}>
+        {passed
+          ? 'Well done, you seem to remember what the item was. Added to the basket just for you!'
+          : "That was super inaccurate, guess you don't want it as much as you seemed like."}
+      </p>
       {error && <p className="hint">Judge unreachable: {error}</p>}
     </div>
   )
