@@ -1,11 +1,11 @@
 # FitSketch
 
 A swipe-based clothes shopping app that only lets you buy what you can remember.
-
+One-page layout with one card at a time. A card has a photo of thing, description and price.
+At the top of the page we have a basket icon (basket is a list of all items that passed the draw check with links to buy them)
 1. **Swipe**: right sends an item to a hidden pending queue, left discards it.
-2. **Draw**: after 2 to 4 swipes or 20 to 60 seconds (whichever comes first), swiping freezes and you get ~30s to sketch a pending item from memory.
-3. **Judge**: a vision AI scores the drawing 0 to 100 against the original photo and adds a one-line roast. 45 or more puts the item in the basket; anything lower makes it vanish.
-4. **End screen**: items remembered, basket total and "regret saved" in £.
+2. **Draw**: after 3 swipes, swiping freezes and you get 60s to sketch a pending item from memory. The page says: '3 swipes ago you liked a jacket, draw it to keep it' and gives 3 colours to draw with.
+3. **Judge**: AI compares the drawing against actual photo and confirm the item drawn is correct. LLM must count that the sketch was drawn from memory in 60 seconds, and be generous about roughness and skill. If the test pass item is saved, if faild item vanishes 
 
 ## Status
 
