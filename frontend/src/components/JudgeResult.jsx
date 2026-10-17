@@ -1,7 +1,7 @@
 import { assetUrl } from '../lib/api'
 
 export default function JudgeResult({ result }) {
-  const { item, drawing, passed, error } = result
+  const { item, drawing, passed, judged } = result
 
   return (
     <div className="result">
@@ -17,7 +17,7 @@ export default function JudgeResult({ result }) {
       </div>
 
       <p className={`verdict ${passed ? 'pass' : 'fail'}`}>{passed ? 'Pass' : 'Fail'}</p>
-      {error && <p className="hint">Judge unreachable: {error}</p>}
+      {!judged && <p className="hint">Judge unavailable, so you keep it</p>}
     </div>
   )
 }

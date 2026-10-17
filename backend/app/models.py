@@ -21,5 +21,7 @@ class ScoreRequest(BaseModel):
 class ScoreResponse(BaseModel):
     item_id: str
     score: int = Field(ge=0, le=100)
-    roast: str
+    reason: str
     passed: bool
+    # False when the judge could not run and the item was kept by default
+    judged: bool

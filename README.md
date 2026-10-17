@@ -12,13 +12,27 @@ Two actions only: swipe and draw.
 
 ## Status
 
-Playable end to end. The AI judge is still stubbed: `score_drawing` in `backend/app/scoring.py` returns a random score, so Pass/Fail is currently a coin flip. Everything else is real.
+Playable end to end, with real judging by Gemini.
+
+You need a Gemini API key. It is free and needs no card: go to [aistudio.google.com/apikey](https://aistudio.google.com/apikey), sign in with a Google account and click **Create API key**. Then put it in `backend/.env`:
+
+```
+GEMINI_API_KEY=...
+```
+
+Restart the backend after adding it. Without a key the game still runs, but every drawing comes back "Judge unavailable, so you keep it" and nothing is ever rejected.
+
+Free-tier limits are generous enough for this: one drawing round is one request, and a round takes 60 seconds, so you cannot realistically hit the per-minute cap while playing.
+
+The judge is `backend/app/scoring.py`. It sends the product photo and the sketch to `gemini-2.5-flash`, which returns a 0 to 100 score and a one-line reason; 45 or more passes. The brief tells it the drawing was done from memory in 60 seconds with six colours and no eraser, and to reward the right garment, the right colour and distinctive features while ignoring drawing skill. Tune the bands in `SYSTEM` if it judges too hard or too softly; every score and reason is printed to the backend console. Set `GEMINI_MODEL` in `.env` to use a different model.
+
+If the judge cannot run, for any reason, the player keeps the item. A flaky connection should never cost someone a card mid-demo.
 
 ## Adding clothing items
 
 Items live in the backend so the judge can read the original photo.
 
-1. Put the photos in `backend/catalogue/images/`. Any web format works (`.jpg`, `.png`, `.webp`). Portrait, roughly 3:4, looks best; the card crops to that shape.
+1. Put the photos in `backend/catalogue/images/`. JPEG, PNG, WebP and AVIF all work, so a photo saved straight off a shop site is fine. Portrait, roughly 3:4, looks best; the card crops to that shape. The browser shows the original file, while the judge gets a JPEG copy shrunk to 800px, so big photos cost nothing at judging time.
 2. Describe each one in `backend/catalogue/items.json`:
 
 ```json

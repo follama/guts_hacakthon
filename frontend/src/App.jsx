@@ -63,9 +63,11 @@ export default function App() {
     try {
       const res = await scoreDrawing({ itemId: item.id, drawing })
       if (res.passed) setBasket((b) => [...b, item])
-      setResult({ item, drawing, passed: res.passed })
-    } catch (err) {
-      setResult({ item, drawing, passed: false, error: err.message })
+      setResult({ item, drawing, passed: res.passed, judged: res.judged })
+    } catch {
+      // Backend unreachable: keep the item rather than punish the player.
+      setBasket((b) => [...b, item])
+      setResult({ item, drawing, passed: true, judged: false })
     }
     setPhase('result')
   }

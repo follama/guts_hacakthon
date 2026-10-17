@@ -7,7 +7,7 @@ from fastapi.staticfiles import StaticFiles
 
 from .catalogue import IMAGES_DIR, image_path, load_items
 from .models import Item, ScoreRequest, ScoreResponse
-from .scoring import score_drawing
+from .scoring import JudgeUnavailable, score_drawing
 
 load_dotenv()
 
@@ -39,10 +39,19 @@ def items():
 
 @app.post("/api/score", response_model=ScoreResponse)
 def score(req: ScoreRequest):
-    result = score_drawing(req.drawing, image_path(req.item_id))
+    try:
+        result = score_drawing(req.drawing, image_path(req.item_id))
+    except JudgeUnavailable as err:
+        # Never punish the player for our outage: keep the item.
+        print(f"[judge] unavailable: {err}")
+        return ScoreResponse(item_id=req.item_id, score=0, reason="", passed=True, judged=False)
+
+    score = max(0, min(100, result.score))
+    print(f"[judge] {req.item_id}: {score} - {result.reason}")
     return ScoreResponse(
         item_id=req.item_id,
-        score=result.score,
-        roast=result.roast,
-        passed=result.score >= PASS_THRESHOLD,
+        score=score,
+        reason=result.reason,
+        passed=score >= PASS_THRESHOLD,
+        judged=True,
     )
