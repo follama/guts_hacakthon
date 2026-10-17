@@ -1,0 +1,9 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, sans-serif; background: #faf7f2; color: #222; }
+.app { max-width: 480px; margin: 0 auto; padding: 16px; }
+.muted { color: #777; }
+nav { display: flex; gap: 8px; margin-bottom: 16px; flex-wrap: wrap; }
+button { padding: 8px 14px; border: 1px solid #222; background: #fff; border-radius: 8px; cursor: pointer; }
+button.active { background: #222; color: #fff; }
+.panel { background: #fff; border-radius: 12px; padding: 16px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06); }
+.canvas { display: block; width: 100%; max-width: 300px; aspect-ratio: 1; border: 1px dashed #aaa; border-radius: 8px; margin-bottom: 12px; touch-action: none; }
