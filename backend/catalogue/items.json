@@ -1,34 +1,154 @@
 [
   {
-    "id": "item-01",
-    "name": "Red Puffer Jacket",
-    "type": "jacket",
-    "price": 89.99,
-    "image": "item-01.jpg",
-    "url": "https://example.com/red-puffer-jacket"
+    "id": "1",
+    "name": "Dark green Oversized polo shirt",
+    "type": "polo shirt",
+    "price": 24.75,
+    "image": "01.jpg",
+    "url": "https://www2.hm.com/en_gb/productpage.1368499003.html"
   },
   {
-    "id": "item-02",
-    "name": "Green Pleated Skirt",
-    "type": "skirt",
-    "price": 42.0,
-    "image": "item-02.jpg",
-    "url": "https://example.com/green-pleated-skirt"
+    "id": "2",
+    "name": "Dark grey/Pink Floyd Oversized printed T-shirt",
+    "type": "t-shirt",
+    "price": 12.99,
+    "image": "02.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1341688020.html"
   },
   {
-    "id": "item-03",
-    "name": "Chunky White Trainers",
-    "type": "trainers",
-    "price": 74.5,
-    "image": "item-03.jpg",
-    "url": "https://example.com/chunky-white-trainers"
-  },
-  {
-    "id": "item-04",
-    "name": "Striped Knit Jumper",
+    "id": "3",
+    "name": "Pink Batwing-sleeved fine-knit jumper",
     "type": "jumper",
-    "price": 55.0,
-    "image": "item-04.jpg",
-    "url": "https://example.com/striped-knit-jumper"
+    "price": 13.5,
+    "image": "3.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1339863001.html"
+  },
+  {
+    "id": "4",
+    "name": "Light beige/Leopard print Baggy cotton twill trousers",
+    "type": "trousers",
+    "price": 17.99,
+    "image": "4.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1360064002.html"
+  },
+  {
+    "id": "5",
+    "name": "Black/Floral Tie-belt twill jacket",
+    "type": "jacket",
+    "price": 44.99,
+    "image": "5.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1356634001.html"
+  },
+  {
+    "id": "6",
+    "name": "Dark red Scarf-collar blouse",
+    "type": "blouse",
+    "price": 27.99,
+    "image": "6.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1328262004.html"
+  },
+  {
+    "id": "7",
+    "name": "Dark khaki green Tailored barrel trousers",
+    "type": "trousers",
+    "price": 17.99,
+    "image": "7.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1336389003.html"
+  },
+  {
+    "id": "8",
+    "name": "Dark mole/Argyle pattern Oversized knitted jumper",
+    "type": "jumper",
+    "price": 28.5,
+    "image": "8.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1357107002.html"
+  },
+  {
+    "id": "9",
+    "name": "Dark denim blue Pleated denim skirt",
+    "type": "skirt",
+    "price": 32.99,
+    "image": "9.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1368812002.html"
+  },
+  {
+    "id": "10",
+    "name": "Burgundy Scarf-detail satin top",
+    "type": "top",
+    "price": 12.0,
+    "image": "10.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1330027003.html"
+  },
+  {
+    "id": "11",
+    "name": "Dark beige/Striped Asymmetric strappy top",
+    "type": "top",
+    "price": 22.99,
+    "image": "11.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1345061001.html"
+  },
+  {
+    "id": "12",
+    "name": "Pink Oversized poplin shirt",
+    "type": "shirt",
+    "price": 19.99,
+    "image": "12.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1297196004.html"
+  },
+  {
+    "id": "13",
+    "name": "Denim grey Oversized denim gilet",
+    "type": "gilet",
+    "price": 24.99,
+    "image": "13.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1346312002.html"
+  },
+  {
+    "id": "14",
+    "name": "Beige/Leopard print Denim midi dress",
+    "type": "dress",
+    "price": 44.99,
+    "image": "14.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1360988002.html"
+  },
+  {
+    "id": "15",
+    "name": "Cream/Polka dot Lace-trimmed skirt",
+    "type": "skirt",
+    "price": 32.99,
+    "image": "15.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1330502005.html"
+  },
+  {
+    "id": "16",
+    "name": "Dark brown Tie-back boat-neck top",
+    "type": "top",
+    "price": 12.99,
+    "image": "16.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1360319002.html"
+  },
+  {
+    "id": "17",
+    "name": "Black Tie-detail balloon trousers",
+    "type": "trousers",
+    "price": 8.0,
+    "image": "17.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1343061002.html"
+  },
+  {
+    "id": "18",
+    "name": "Dark orange V-neck lace top",
+    "type": "top",
+    "price": 17.99,
+    "image": "18.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1350352001.html"
+  },
+  {
+    "id": "19",
+    "name": "Powder pink Ruched satin skirt",
+    "type": "skirt",
+    "price": 19.99,
+    "image": "19.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1361787001.html"
   }
 ]
