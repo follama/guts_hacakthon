@@ -9,13 +9,18 @@ async function request(path, options = {}) {
   return res.json()
 }
 
-export function checkHealth() {
-  return request('/api/health')
+// Item photos are served by the backend, which may be on another domain.
+export function assetUrl(path) {
+  return `${API_URL}${path}`
 }
 
-export function scoreDrawing({ itemId, itemImageUrl, drawing }) {
+export function fetchItems() {
+  return request('/api/items')
+}
+
+export function scoreDrawing({ itemId, drawing }) {
   return request('/api/score', {
     method: 'POST',
-    body: JSON.stringify({ item_id: itemId, item_image_url: itemImageUrl, drawing }),
+    body: JSON.stringify({ item_id: itemId, drawing }),
   })
 }

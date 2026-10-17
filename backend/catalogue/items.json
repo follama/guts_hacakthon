@@ -1,0 +1,34 @@
+[
+  {
+    "id": "item-01",
+    "name": "Red Puffer Jacket",
+    "type": "jacket",
+    "price": 89.99,
+    "image": "item-01.jpg",
+    "url": "https://example.com/red-puffer-jacket"
+  },
+  {
+    "id": "item-02",
+    "name": "Green Pleated Skirt",
+    "type": "skirt",
+    "price": 42.0,
+    "image": "item-02.jpg",
+    "url": "https://example.com/green-pleated-skirt"
+  },
+  {
+    "id": "item-03",
+    "name": "Chunky White Trainers",
+    "type": "trainers",
+    "price": 74.5,
+    "image": "item-03.jpg",
+    "url": "https://example.com/chunky-white-trainers"
+  },
+  {
+    "id": "item-04",
+    "name": "Striped Knit Jumper",
+    "type": "jumper",
+    "price": 55.0,
+    "image": "item-04.jpg",
+    "url": "https://example.com/striped-knit-jumper"
+  }
+]

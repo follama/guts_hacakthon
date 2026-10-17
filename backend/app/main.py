@@ -3,8 +3,10 @@ import os
 from dotenv import load_dotenv
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
 
-from .models import ScoreRequest, ScoreResponse
+from .catalogue import IMAGES_DIR, image_path, load_items
+from .models import Item, ScoreRequest, ScoreResponse
 from .scoring import score_drawing
 
 load_dotenv()
@@ -21,15 +23,23 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+IMAGES_DIR.mkdir(parents=True, exist_ok=True)
+app.mount("/api/images", StaticFiles(directory=IMAGES_DIR), name="images")
+
 
 @app.get("/api/health")
 def health():
     return {"status": "ok"}
 
 
+@app.get("/api/items", response_model=list[Item])
+def items():
+    return load_items()
+
+
 @app.post("/api/score", response_model=ScoreResponse)
 def score(req: ScoreRequest):
-    result = score_drawing(req.drawing, req.item_image_url)
+    result = score_drawing(req.drawing, image_path(req.item_id))
     return ScoreResponse(
         item_id=req.item_id,
         score=result.score,

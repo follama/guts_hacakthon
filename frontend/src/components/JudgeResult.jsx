@@ -1,10 +1,23 @@
+import { assetUrl } from '../lib/api'
+
 export default function JudgeResult({ result }) {
-  if (!result) return <div className="panel muted">No drawing judged yet.</div>
+  const { item, drawing, passed, error } = result
+
   return (
-    <div className="panel">
-      <h2>{result.score}/100</h2>
-      <p>&ldquo;{result.roast}&rdquo;</p>
-      <p>{result.passed ? 'Added to basket' : 'Item vanished'}</p>
+    <div className="result">
+      <div className="compare">
+        <figure>
+          <img src={drawing} alt="Your drawing" />
+          <figcaption>Yours</figcaption>
+        </figure>
+        <figure>
+          <img src={assetUrl(item.image_url)} alt={item.name} />
+          <figcaption>Real</figcaption>
+        </figure>
+      </div>
+
+      <p className={`verdict ${passed ? 'pass' : 'fail'}`}>{passed ? 'Pass' : 'Fail'}</p>
+      {error && <p className="hint">Judge unreachable: {error}</p>}
     </div>
   )
 }

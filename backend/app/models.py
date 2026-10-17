@@ -1,9 +1,19 @@
 from pydantic import BaseModel, Field
 
 
+class Item(BaseModel):
+    id: str
+    name: str
+    # Short noun used in the draw prompt, e.g. "jacket", "dress", "trainers"
+    type: str
+    price: float
+    image_url: str
+    # Shop page the basket links to; optional
+    url: str | None = None
+
+
 class ScoreRequest(BaseModel):
     item_id: str
-    item_image_url: str
     # Canvas export as a data URL, e.g. "data:image/png;base64,...."
     drawing: str
 
