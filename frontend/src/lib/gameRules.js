@@ -4,7 +4,28 @@ export const DRAW_TIME_SECONDS = 60
 export const RESULT_SECONDS = 4
 export const SWIPE_THRESHOLD = 90
 
-export const COLOURS = ['#1a1a1a', '#b71c1c', '#f48fb1', '#1e88e5', '#43a047', '#fdd835', '#8d6e63']
+export const COLOURS = [
+  '#1a1a1a', // black
+  '#4a4a4a', // dark grey
+  '#9e9e9e', // mid grey
+  '#d4d4d4', // light grey
+  '#ffffff', // white
+  '#f3e7ba', // beige
+  '#b71c1c', // deep red
+  '#e53935', // red
+  '#ff7043', // orange-red
+  '#ff9800', // orange
+  '#fdd835', // yellow
+  '#c0ca33', // lime
+  '#43a047', // green
+  '#00897b', // teal
+  '#1e88e5', // blue
+  '#5e35b1', // purple
+  '#d81b60', // magenta
+  '#f48fb1', // pink
+  '#8d6e63', // brown
+  '#a1887f', // warm taupe
+]
 
 // Keep tagged items that match plus untagged ones, but only if at least one
 // tagged item matches; otherwise the choice is ignored rather than leaving

@@ -130,7 +130,11 @@ export default function App() {
             <JudgeResult result={result} judging={phase === 'judging'} />
           )}
           {phase === 'basket' && (
-            <Basket items={basket} onClose={deck.length > 0 ? () => setPhase('swipe') : null} />
+            <Basket
+              items={basket}
+              onClose={deck.length > 0 ? () => setPhase('swipe') : null}
+              onRemove={(i) => setBasket((b) => b.filter((_, idx) => idx !== i))}
+            />
           )}
         </>
       )}

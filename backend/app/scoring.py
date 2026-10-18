@@ -18,7 +18,6 @@ from google.genai import types
 from PIL import Image
 
 # Tried in order. The free tier returns 503 under load, so a slower second
-# model beats silently keeping an item mid-demo. Overridable in .env.
 MODELS = [
     m.strip()
     for m in os.getenv("GEMINI_MODELS", "gemini-3.5-flash-lite,gemini-3.5-flash").split(",")
