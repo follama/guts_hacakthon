@@ -5,6 +5,7 @@ import SwipeDeck from './components/SwipeDeck'
 import DrawCanvas from './components/DrawCanvas'
 import JudgeResult from './components/JudgeResult'
 import Basket from './components/Basket'
+import SlashGame from './components/SlashGame'
 import WelcomePage from './components/WelcomePage'
 import Setup from './components/Setup'
 import useSwipe from './lib/useSwipe'
@@ -134,8 +135,10 @@ export default function App() {
               items={basket}
               onClose={deck.length > 0 ? () => setPhase('swipe') : null}
               onRemove={(i) => setBasket((b) => b.filter((_, idx) => idx !== i))}
+              onGame={() => setPhase('slash')}
             />
           )}
+          {phase === 'slash' && <SlashGame onBack={() => setPhase('basket')} />}
         </>
       )}
     </main>

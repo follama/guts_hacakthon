@@ -1,15 +1,30 @@
 import { useEffect, useRef, useState } from 'react'
-import { COLOURS, DRAW_TIME_SECONDS } from '../lib/gameRules'
+import { DRAW_TIME_SECONDS } from '../lib/gameRules'
 import useSwipe from '../lib/useSwipe'
 
 const SIZE = 600
+
+// Track: 0-10 = white→light grey, 10-54 = pastels, 54-90 = vivid, 90-100 = dark→black
+const TRACK =
+  'linear-gradient(to right,' +
+  'white 0%,#ccc 10%,' +
+  'hsl(0,65%,80%) 11%,hsl(90,65%,80%) 22%,hsl(180,65%,80%) 33%,hsl(270,65%,80%) 44%,hsl(360,65%,80%) 54%,' +
+  'hsl(0,85%,45%) 55%,hsl(90,85%,45%) 65%,hsl(180,85%,45%) 73%,hsl(270,85%,45%) 82%,hsl(360,85%,45%) 90%,' +
+  '#555 95%,black 100%)'
+
+function sliderColour(v) {
+  if (v <= 10) return `hsl(0,0%,${100 - v * 2}%)`
+  if (v <= 54) return `hsl(${Math.round(((v - 10) / 44) * 360)},65%,80%)`
+  if (v <= 90) return `hsl(${Math.round(((v - 54) / 36) * 360)},85%,45%)`
+  return `hsl(0,0%,${Math.round((100 - v) * 4.5)}%)`
+}
 
 export default function DrawCanvas({ item, swipesAgo, onSubmit }) {
   const canvasRef = useRef(null)
   const painting = useRef(false)
   const submitted = useRef(false)
-  const [colourIdx, setColourIdx] = useState(0)
-  const colour = COLOURS[colourIdx]
+  const [val, setVal] = useState(55)
+  const colour = sliderColour(val)
   const [secondsLeft, setSecondsLeft] = useState(DRAW_TIME_SECONDS)
 
   const submitRef = useRef(onSubmit)
@@ -99,10 +114,10 @@ export default function DrawCanvas({ item, swipesAgo, onSubmit }) {
             type="range"
             className="colour-slider"
             min={0}
-            max={COLOURS.length - 1}
-            value={colourIdx}
-            onChange={(e) => setColourIdx(Number(e.target.value))}
-            style={{ background: `linear-gradient(to right, ${COLOURS.join(', ')})` }}
+            max={100}
+            value={val}
+            onChange={(e) => setVal(Number(e.target.value))}
+            style={{ background: TRACK }}
           />
         </div>
         <div className="draw-swipe-zone" {...toolsSwipe}>

@@ -350,6 +350,19 @@ button:disabled { opacity: 0.35; cursor: default; }
   margin: 0 0 12px;
 }
 
+.basket-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  margin: 72px 0 8px;
+  padding: 32px 16px 24px;
+  border-top: 2px dashed var(--border);
+  cursor: ns-resize;
+  user-select: none;
+  touch-action: none;
+}
+
 .total {
   display: flex;
   justify-content: space-between;
@@ -468,6 +481,72 @@ button:disabled { opacity: 0.35; cursor: default; }
   margin-top: 12px;
   color: var(--muted);
   font-size: clamp(15px, 4.5vw, 18px);
+}
+
+/* ── Slash mini-game ──────────────────────────────────────── */
+.slash-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.slash-hud {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 4px;
+  cursor: ns-resize;
+  user-select: none;
+  min-height: 64px;
+}
+
+.slash-score {
+  font-size: clamp(18px, 5vw, 22px);
+  font-weight: 700;
+  color: var(--blue-darkest);
+}
+
+.slash-timer {
+  font-size: clamp(18px, 5vw, 22px);
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  color: var(--blue-dark);
+}
+
+.slash-timer.urgent { color: #e53935; }
+
+.slash-back-strip {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--blue-mid);
+  animation: bob 1.4s ease-in-out infinite;
+}
+
+.slash-canvas {
+  display: block;
+  width: 100%;
+  aspect-ratio: 400 / 540;
+  border-radius: 16px;
+  box-shadow: 0 6px 24px rgba(13,27,42,0.5);
+  touch-action: none;
+}
+
+.slash-over {
+  text-align: center;
+  padding: 12px 0 4px;
+  font-size: clamp(15px, 4.5vw, 18px);
+  color: var(--blue-darkest);
+}
+
+.slash-over-title {
+  margin: 0 0 4px;
+  font-size: clamp(20px, 6vw, 26px);
+  font-weight: 700;
+}
+
+.slash-over-score {
+  margin: 0 0 8px;
+  color: var(--blue-dark);
 }
 
 /* ── Safe area for notched phones ─────────────────────────── */
