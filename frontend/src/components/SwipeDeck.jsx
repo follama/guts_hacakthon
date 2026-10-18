@@ -2,7 +2,27 @@ import { useRef, useState } from 'react'
 import { assetUrl } from '../lib/api'
 import { SWIPE_THRESHOLD } from '../lib/gameRules'
 
-export default function SwipeDeck({ items, onSwipe }) {
+function ProductFace({ item }) {
+  return (
+    <>
+      <img src={assetUrl(item.image_url)} alt={item.name} draggable="false" />
+      <div className="card-info">
+        <span className="card-name">{item.name}</span>
+        <span className="card-price">£{item.price.toFixed(2)}</span>
+      </div>
+    </>
+  )
+}
+
+const KEEP_NOPE = { left: 'NOPE', right: 'KEEP' }
+
+export default function SwipeDeck({
+  items,
+  onSwipe,
+  Face = ProductFace,
+  stamps = () => KEEP_NOPE,
+  hint = 'Swipe right to add to basket, left to skip',
+}) {
   const [dx, setDx] = useState(0)
   const [dragging, setDragging] = useState(false)
   const [flying, setFlying] = useState(null)
@@ -40,17 +60,14 @@ export default function SwipeDeck({ items, onSwipe }) {
   }
 
   const offset = flying ? (flying === 'right' ? 1 : -1) * window.innerWidth : dx
+  const label = stamps(top)
 
   return (
     <>
       <div className="deck">
         {next && (
           <article className="card card-behind" key={next.id}>
-            <img src={assetUrl(next.image_url)} alt="" draggable="false" />
-            <div className="card-info">
-              <span className="card-name">{next.name}</span>
-              <span className="card-price">£{next.price.toFixed(2)}</span>
-            </div>
+            <Face item={next} />
           </article>
         )}
 
@@ -66,21 +83,17 @@ export default function SwipeDeck({ items, onSwipe }) {
           onPointerUp={up}
           onPointerCancel={up}
         >
-          <img src={assetUrl(top.image_url)} alt={top.name} draggable="false" />
+          <Face item={top} />
           <span className="stamp keep" style={{ opacity: Math.max(0, offset / SWIPE_THRESHOLD) }}>
-            KEEP
+            {label.right}
           </span>
           <span className="stamp nope" style={{ opacity: Math.max(0, -offset / SWIPE_THRESHOLD) }}>
-            NOPE
+            {label.left}
           </span>
-          <div className="card-info">
-            <span className="card-name">{top.name}</span>
-            <span className="card-price">£{top.price.toFixed(2)}</span>
-          </div>
         </article>
       </div>
 
-      <p className="hint">Swipe right to add to basket, left to skip</p>
+      <p className="hint">{hint}</p>
     </>
   )
 }

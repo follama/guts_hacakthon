@@ -56,6 +56,10 @@ Items live in the backend so the judge can read the original photo.
 | `price` | On the card and in the basket total. A number, no `£`.                             |
 | `image` | Filename inside `backend/catalogue/images/`.                                        |
 | `url`   | Where the basket name links to. Optional; without it the name is plain text.        |
+| `gender` | Setup filter: `"male"`, `"female"` or `"unisex"`. Optional.                        |
+| `styles` | Setup filter: any of `"casual"`, `"sportswear"`, `"party"`, `"pyjamas"`, e.g. `["casual", "party"]`. Optional. |
+
+After the welcome page, players swipe through setup cards: male (left) or female (right), then like or skip each style. The deck then shows only matching items. Items without a tag show for everyone, and a choice that matches nothing is ignored rather than leaving an empty deck, so picking "male" with an all-women's catalogue still shows every item.
 
 `items.json` is re-read on every request, so you can add items while the server is running: just reload the page. An item whose image file is missing is skipped and logged, so a typo costs you one card rather than the whole deck.
 

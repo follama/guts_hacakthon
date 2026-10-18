@@ -422,13 +422,40 @@ button:disabled { opacity: 0.35; cursor: default; }
   50%       { transform: translateY(6px); }
 }
 
-/* ── Transition page ───────────────────────────────────────── */
-.transition-page {
+/* ── Setup cards ──────────────────────────────────────────── */
+.setup-heading {
+  margin: 0 0 14px;
+  text-align: center;
+  font-size: clamp(20px, 6vw, 26px);
+  color: var(--blue-darkest);
+}
+
+.setup-face {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 100dvh;
+  gap: 14px;
+  aspect-ratio: 3 / 4;
   padding: 24px;
+  text-align: center;
+}
+
+.setup-emoji { font-size: clamp(72px, 24vw, 110px); line-height: 1; }
+
+.setup-title {
+  font-size: clamp(26px, 8vw, 34px);
+  font-weight: 700;
+  color: var(--blue-darkest);
+}
+
+.setup-sides {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 12px;
+  color: var(--muted);
+  font-size: clamp(15px, 4.5vw, 18px);
 }
 
 /* ── Safe area for notched phones ─────────────────────────── */
@@ -438,7 +465,7 @@ button:disabled { opacity: 0.35; cursor: default; }
 
 /* ── Landscape / small phone adjustments ──────────────────── */
 @media (max-height: 600px) and (orientation: landscape) {
-  .card img { aspect-ratio: 4 / 3; }
+  .card img, .setup-face { aspect-ratio: 4 / 3; }
   .canvas   { aspect-ratio: 2 / 1; }
   header    { margin-bottom: 10px; }
 }

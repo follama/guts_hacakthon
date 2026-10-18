@@ -3,6 +3,8 @@
     "id": "1",
     "name": "Dark green Oversized polo shirt",
     "type": "polo shirt",
+    "gender": "female",
+    "styles": ["casual"],
     "price": 24.75,
     "image": "01.jpg",
     "url": "https://www2.hm.com/en_gb/productpage.1368499003.html"
@@ -11,6 +13,8 @@
     "id": "2",
     "name": "Dark grey/Pink Floyd Oversized printed T-shirt",
     "type": "t-shirt",
+    "gender": "female",
+    "styles": ["casual"],
     "price": 12.99,
     "image": "02.avif",
     "url": "https://www2.hm.com/en_gb/productpage.1341688020.html"
@@ -19,6 +23,8 @@
     "id": "3",
     "name": "Pink Batwing-sleeved fine-knit jumper",
     "type": "jumper",
+    "gender": "female",
+    "styles": ["casual"],
     "price": 13.5,
     "image": "3.avif",
     "url": "https://www2.hm.com/en_gb/productpage.1339863001.html"
@@ -27,6 +33,8 @@
     "id": "4",
     "name": "Light beige/Leopard print Baggy cotton twill trousers",
     "type": "trousers",
+    "gender": "female",
+    "styles": ["casual"],
     "price": 17.99,
     "image": "4.avif",
     "url": "https://www2.hm.com/en_gb/productpage.1360064002.html"
@@ -35,6 +43,8 @@
     "id": "5",
     "name": "Black/Floral Tie-belt twill jacket",
     "type": "jacket",
+    "gender": "female",
+    "styles": ["casual"],
     "price": 44.99,
     "image": "5.avif",
     "url": "https://www2.hm.com/en_gb/productpage.1356634001.html"
@@ -43,6 +53,8 @@
     "id": "6",
     "name": "Dark red Scarf-collar blouse",
     "type": "blouse",
+    "gender": "female",
+    "styles": ["casual", "party"],
     "price": 27.99,
     "image": "6.avif",
     "url": "https://www2.hm.com/en_gb/productpage.1328262004.html"
@@ -51,6 +63,8 @@
     "id": "7",
     "name": "Dark khaki green Tailored barrel trousers",
     "type": "trousers",
+    "gender": "female",
+    "styles": ["casual"],
     "price": 17.99,
     "image": "7.avif",
     "url": "https://www2.hm.com/en_gb/productpage.1336389003.html"
@@ -59,6 +73,8 @@
     "id": "8",
     "name": "Dark mole/Argyle pattern Oversized knitted jumper",
     "type": "jumper",
+    "gender": "female",
+    "styles": ["casual"],
     "price": 28.5,
     "image": "8.avif",
     "url": "https://www2.hm.com/en_gb/productpage.1357107002.html"
@@ -67,6 +83,8 @@
     "id": "9",
     "name": "Dark denim blue Pleated denim skirt",
     "type": "skirt",
+    "gender": "female",
+    "styles": ["casual"],
     "price": 32.99,
     "image": "9.avif",
     "url": "https://www2.hm.com/en_gb/productpage.1368812002.html"
@@ -75,6 +93,8 @@
     "id": "10",
     "name": "Burgundy Scarf-detail satin top",
     "type": "top",
+    "gender": "female",
+    "styles": ["party"],
     "price": 12.0,
     "image": "10.avif",
     "url": "https://www2.hm.com/en_gb/productpage.1330027003.html"
@@ -83,6 +103,8 @@
     "id": "11",
     "name": "Dark beige/Striped Asymmetric strappy top",
     "type": "top",
+    "gender": "female",
+    "styles": ["casual", "party"],
     "price": 22.99,
     "image": "11.avif",
     "url": "https://www2.hm.com/en_gb/productpage.1345061001.html"
@@ -91,6 +113,8 @@
     "id": "12",
     "name": "Pink Oversized poplin shirt",
     "type": "shirt",
+    "gender": "female",
+    "styles": ["casual"],
     "price": 19.99,
     "image": "12.avif",
     "url": "https://www2.hm.com/en_gb/productpage.1297196004.html"
@@ -99,6 +123,8 @@
     "id": "13",
     "name": "Denim grey Oversized denim gilet",
     "type": "gilet",
+    "gender": "female",
+    "styles": ["casual"],
     "price": 24.99,
     "image": "13.avif",
     "url": "https://www2.hm.com/en_gb/productpage.1346312002.html"
@@ -107,6 +133,8 @@
     "id": "14",
     "name": "Beige/Leopard print Denim midi dress",
     "type": "dress",
+    "gender": "female",
+    "styles": ["casual", "party"],
     "price": 44.99,
     "image": "14.avif",
     "url": "https://www2.hm.com/en_gb/productpage.1360988002.html"
@@ -115,6 +143,8 @@
     "id": "15",
     "name": "Cream/Polka dot Lace-trimmed skirt",
     "type": "skirt",
+    "gender": "female",
+    "styles": ["casual"],
     "price": 32.99,
     "image": "15.avif",
     "url": "https://www2.hm.com/en_gb/productpage.1330502005.html"
@@ -123,6 +153,8 @@
     "id": "16",
     "name": "Dark brown Tie-back boat-neck top",
     "type": "top",
+    "gender": "female",
+    "styles": ["casual", "party"],
     "price": 12.99,
     "image": "16.avif",
     "url": "https://www2.hm.com/en_gb/productpage.1360319002.html"
@@ -131,6 +163,8 @@
     "id": "17",
     "name": "Black Tie-detail balloon trousers",
     "type": "trousers",
+    "gender": "female",
+    "styles": ["casual", "party"],
     "price": 8.0,
     "image": "17.avif",
     "url": "https://www2.hm.com/en_gb/productpage.1343061002.html"
@@ -139,6 +173,8 @@
     "id": "18",
     "name": "Dark orange V-neck lace top",
     "type": "top",
+    "gender": "female",
+    "styles": ["party"],
     "price": 17.99,
     "image": "18.avif",
     "url": "https://www2.hm.com/en_gb/productpage.1350352001.html"
@@ -147,6 +183,8 @@
     "id": "19",
     "name": "Powder pink Ruched satin skirt",
     "type": "skirt",
+    "gender": "female",
+    "styles": ["party"],
     "price": 19.99,
     "image": "19.avif",
     "url": "https://www2.hm.com/en_gb/productpage.1361787001.html"

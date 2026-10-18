@@ -10,6 +10,10 @@ class Item(BaseModel):
     image_url: str
     # Shop page the basket links to; optional
     url: str | None = None
+    # Setup filters: "male", "female" or "unisex", and any of casual,
+    # sportswear, party, pyjamas. Untagged items show for everyone.
+    gender: str | None = None
+    styles: list[str] = []
 
 
 class ScoreRequest(BaseModel):

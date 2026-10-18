@@ -32,6 +32,8 @@ def load_items() -> list[Item]:
                 price=entry["price"],
                 image_url=f"/api/images/{entry['image']}",
                 url=entry.get("url"),
+                gender=entry.get("gender"),
+                styles=entry.get("styles", []),
             )
         )
     return items

@@ -1,16 +1,18 @@
 import { useEffect, useState } from 'react'
 import { fetchItems, scoreDrawing } from './lib/api'
-import { RESULT_SECONDS, SWIPES_BEFORE_DRAW, shuffle } from './lib/gameRules'
+import { RESULT_SECONDS, SWIPES_BEFORE_DRAW, pickItems, shuffle } from './lib/gameRules'
 import SwipeDeck from './components/SwipeDeck'
 import DrawCanvas from './components/DrawCanvas'
 import JudgeResult from './components/JudgeResult'
 import Basket from './components/Basket'
 import WelcomePage from './components/WelcomePage'
-import TransitionPage from './components/TransitionPage'
+import Setup from './components/Setup'
 import useSwipe from './lib/useSwipe'
 
-// swipe -> draw -> judging -> result -> swipe ..., with basket on demand.
+// welcome -> setup -> swipe -> draw -> judging -> result -> swipe ..., with basket on demand.
 export default function App() {
+  const [catalogue, setCatalogue] = useState(null)
+  const [prefs, setPrefs] = useState(null)
   const [deck, setDeck] = useState(null)
   const [loadError, setLoadError] = useState(null)
   const [phase, setPhase] = useState('welcome')
@@ -23,9 +25,15 @@ export default function App() {
 
   useEffect(() => {
     fetchItems()
-      .then((items) => setDeck(shuffle(items)))
+      .then(setCatalogue)
       .catch((err) => setLoadError(err.message))
   }, [])
+
+  // The deck is built once both the catalogue and the setup answers are in,
+  // whichever arrives last.
+  useEffect(() => {
+    if (catalogue && prefs && deck === null) setDeck(shuffle(pickItems(catalogue, prefs)))
+  }, [catalogue, prefs, deck])
 
   const emptyCatalogue = deck !== null && deck.length === 0 && swipeCount === 0
 
@@ -78,8 +86,7 @@ export default function App() {
   // Must be called before any early returns (Rules of Hooks)
   const headerSwipe = useSwipe({ onDown: phase === 'swipe' ? () => setPhase('basket') : undefined })
 
-  if (phase === 'welcome') return <WelcomePage onStart={() => setPhase('transition')} />
-  if (phase === 'transition') return <TransitionPage onContinue={() => setPhase('swipe')} />
+  if (phase === 'welcome') return <WelcomePage onStart={() => setPhase('setup')} />
 
   return (
     <main className="app">
@@ -94,8 +101,17 @@ export default function App() {
         )}
       </header>
 
-      {loadError && <p className="hint">Can&rsquo;t reach the backend: {loadError}</p>}
-      {!loadError && deck === null && <p className="hint">Loading&hellip;</p>}
+      {phase === 'setup' && (
+        <Setup
+          onDone={(answers) => {
+            setPrefs(answers)
+            setPhase('swipe')
+          }}
+        />
+      )}
+
+      {phase !== 'setup' && loadError && <p className="hint">Can&rsquo;t reach the backend: {loadError}</p>}
+      {phase !== 'setup' && !loadError && deck === null && <p className="hint">Loading&hellip;</p>}
       {emptyCatalogue && (
         <p className="hint">
           No items yet. Put photos in <code>backend/catalogue/images/</code> and list them in{' '}
