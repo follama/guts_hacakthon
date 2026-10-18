@@ -4,7 +4,9 @@
     "name": "Dark green Oversized polo shirt",
     "type": "polo shirt",
     "gender": "female",
-    "styles": ["casual"],
+    "styles": [
+      "casual"
+    ],
     "price": 24.75,
     "image": "01.jpg",
     "url": "https://www2.hm.com/en_gb/productpage.1368499003.html"
@@ -14,7 +16,9 @@
     "name": "Dark grey/Pink Floyd Oversized printed T-shirt",
     "type": "t-shirt",
     "gender": "female",
-    "styles": ["casual"],
+    "styles": [
+      "casual"
+    ],
     "price": 12.99,
     "image": "02.avif",
     "url": "https://www2.hm.com/en_gb/productpage.1341688020.html"
@@ -24,7 +28,9 @@
     "name": "Pink Batwing-sleeved fine-knit jumper",
     "type": "jumper",
     "gender": "female",
-    "styles": ["casual"],
+    "styles": [
+      "casual"
+    ],
     "price": 13.5,
     "image": "3.avif",
     "url": "https://www2.hm.com/en_gb/productpage.1339863001.html"
@@ -34,7 +40,9 @@
     "name": "Light beige/Leopard print Baggy cotton twill trousers",
     "type": "trousers",
     "gender": "female",
-    "styles": ["casual"],
+    "styles": [
+      "casual"
+    ],
     "price": 17.99,
     "image": "4.avif",
     "url": "https://www2.hm.com/en_gb/productpage.1360064002.html"
@@ -44,7 +52,9 @@
     "name": "Black/Floral Tie-belt twill jacket",
     "type": "jacket",
     "gender": "female",
-    "styles": ["casual"],
+    "styles": [
+      "casual"
+    ],
     "price": 44.99,
     "image": "5.avif",
     "url": "https://www2.hm.com/en_gb/productpage.1356634001.html"
@@ -54,7 +64,10 @@
     "name": "Dark red Scarf-collar blouse",
     "type": "blouse",
     "gender": "female",
-    "styles": ["casual", "party"],
+    "styles": [
+      "casual",
+      "party"
+    ],
     "price": 27.99,
     "image": "6.avif",
     "url": "https://www2.hm.com/en_gb/productpage.1328262004.html"
@@ -64,7 +77,9 @@
     "name": "Dark khaki green Tailored barrel trousers",
     "type": "trousers",
     "gender": "female",
-    "styles": ["casual"],
+    "styles": [
+      "casual"
+    ],
     "price": 17.99,
     "image": "7.avif",
     "url": "https://www2.hm.com/en_gb/productpage.1336389003.html"
@@ -74,7 +89,9 @@
     "name": "Dark mole/Argyle pattern Oversized knitted jumper",
     "type": "jumper",
     "gender": "female",
-    "styles": ["casual"],
+    "styles": [
+      "casual"
+    ],
     "price": 28.5,
     "image": "8.avif",
     "url": "https://www2.hm.com/en_gb/productpage.1357107002.html"
@@ -84,7 +101,9 @@
     "name": "Dark denim blue Pleated denim skirt",
     "type": "skirt",
     "gender": "female",
-    "styles": ["casual"],
+    "styles": [
+      "casual"
+    ],
     "price": 32.99,
     "image": "9.avif",
     "url": "https://www2.hm.com/en_gb/productpage.1368812002.html"
@@ -94,7 +113,9 @@
     "name": "Burgundy Scarf-detail satin top",
     "type": "top",
     "gender": "female",
-    "styles": ["party"],
+    "styles": [
+      "party"
+    ],
     "price": 12.0,
     "image": "10.avif",
     "url": "https://www2.hm.com/en_gb/productpage.1330027003.html"
@@ -104,7 +125,10 @@
     "name": "Dark beige/Striped Asymmetric strappy top",
     "type": "top",
     "gender": "female",
-    "styles": ["casual", "party"],
+    "styles": [
+      "casual",
+      "party"
+    ],
     "price": 22.99,
     "image": "11.avif",
     "url": "https://www2.hm.com/en_gb/productpage.1345061001.html"
@@ -114,7 +138,9 @@
     "name": "Pink Oversized poplin shirt",
     "type": "shirt",
     "gender": "female",
-    "styles": ["casual"],
+    "styles": [
+      "casual"
+    ],
     "price": 19.99,
     "image": "12.avif",
     "url": "https://www2.hm.com/en_gb/productpage.1297196004.html"
@@ -124,7 +150,9 @@
     "name": "Denim grey Oversized denim gilet",
     "type": "gilet",
     "gender": "female",
-    "styles": ["casual"],
+    "styles": [
+      "casual"
+    ],
     "price": 24.99,
     "image": "13.avif",
     "url": "https://www2.hm.com/en_gb/productpage.1346312002.html"
@@ -134,7 +162,10 @@
     "name": "Beige/Leopard print Denim midi dress",
     "type": "dress",
     "gender": "female",
-    "styles": ["casual", "party"],
+    "styles": [
+      "casual",
+      "party"
+    ],
     "price": 44.99,
     "image": "14.avif",
     "url": "https://www2.hm.com/en_gb/productpage.1360988002.html"
@@ -144,7 +175,9 @@
     "name": "Cream/Polka dot Lace-trimmed skirt",
     "type": "skirt",
     "gender": "female",
-    "styles": ["casual"],
+    "styles": [
+      "casual"
+    ],
     "price": 32.99,
     "image": "15.avif",
     "url": "https://www2.hm.com/en_gb/productpage.1330502005.html"
@@ -154,7 +187,10 @@
     "name": "Dark brown Tie-back boat-neck top",
     "type": "top",
     "gender": "female",
-    "styles": ["casual", "party"],
+    "styles": [
+      "casual",
+      "party"
+    ],
     "price": 12.99,
     "image": "16.avif",
     "url": "https://www2.hm.com/en_gb/productpage.1360319002.html"
@@ -164,7 +200,10 @@
     "name": "Black Tie-detail balloon trousers",
     "type": "trousers",
     "gender": "female",
-    "styles": ["casual", "party"],
+    "styles": [
+      "casual",
+      "party"
+    ],
     "price": 8.0,
     "image": "17.avif",
     "url": "https://www2.hm.com/en_gb/productpage.1343061002.html"
@@ -174,7 +213,9 @@
     "name": "Dark orange V-neck lace top",
     "type": "top",
     "gender": "female",
-    "styles": ["party"],
+    "styles": [
+      "party"
+    ],
     "price": 17.99,
     "image": "18.avif",
     "url": "https://www2.hm.com/en_gb/productpage.1350352001.html"
@@ -184,9 +225,712 @@
     "name": "Powder pink Ruched satin skirt",
     "type": "skirt",
     "gender": "female",
-    "styles": ["party"],
+    "styles": [
+      "party"
+    ],
     "price": 19.99,
     "image": "19.avif",
     "url": "https://www2.hm.com/en_gb/productpage.1361787001.html"
+  },
+  {
+    "id": "20",
+    "name": "Grey Viscose-blend pyjamas",
+    "type": "pyjama set",
+    "gender": "female",
+    "styles": [
+      "pyjamas"
+    ],
+    "price": 25.5,
+    "image": "20.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.0998802052.html"
+  },
+  {
+    "id": "21",
+    "name": "Black Jersey pyjamas",
+    "type": "pyjama set",
+    "gender": "female",
+    "styles": [
+      "pyjamas"
+    ],
+    "price": 28.05,
+    "image": "21.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1357839001.html"
+  },
+  {
+    "id": "22",
+    "name": "Light dusty blue Viscose-blend pyjamas",
+    "type": "pyjama set",
+    "gender": "female",
+    "styles": [
+      "pyjamas"
+    ],
+    "price": 18.0,
+    "image": "22.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1173636016.html"
+  },
+  {
+    "id": "23",
+    "name": "Pink/Strawberries Pyjama shirt and shorts",
+    "type": "pyjama set",
+    "gender": "female",
+    "styles": [
+      "pyjamas"
+    ],
+    "price": 23.8,
+    "image": "23.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1150604006.html"
+  },
+  {
+    "id": "24",
+    "name": "Blue/Striped Cotton pyjamas",
+    "type": "pyjama set",
+    "gender": "female",
+    "styles": [
+      "pyjamas"
+    ],
+    "price": 28.05,
+    "image": "24.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1314513001.html"
+  },
+  {
+    "id": "25",
+    "name": "Black/Polka dot Lace-trimmed satin pyjamas",
+    "type": "pyjama set",
+    "gender": "female",
+    "styles": [
+      "pyjamas"
+    ],
+    "price": 19.55,
+    "image": "25.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1345752001.html"
+  },
+  {
+    "id": "26",
+    "name": "Cream/Checked Cotton sateen pyjamas",
+    "type": "pyjama set",
+    "gender": "female",
+    "styles": [
+      "pyjamas"
+    ],
+    "price": 29.75,
+    "image": "26.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1333757002.html"
+  },
+  {
+    "id": "27",
+    "name": "Khaki green/Checked Poplin pyjama shirt and bottoms",
+    "type": "pyjama set",
+    "gender": "male",
+    "styles": [
+      "pyjamas"
+    ],
+    "price": 32.3,
+    "image": "27.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1294393003.html"
+  },
+  {
+    "id": "28",
+    "name": "Dark brown Oversized Graphic long-sleeved T-shirt",
+    "type": "long-sleeved t-shirt",
+    "gender": "male",
+    "styles": [
+      "casual"
+    ],
+    "price": 17.0,
+    "image": "28.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1353536007.html"
+  },
+  {
+    "id": "29",
+    "name": "Dark grey/Human Division Oversized Fit Layered long-sleeved T-shirt",
+    "type": "long-sleeved t-shirt",
+    "gender": "male",
+    "styles": [
+      "casual"
+    ],
+    "price": 28.05,
+    "image": "29.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1370693001.html"
+  },
+  {
+    "id": "30",
+    "name": "Dark mole Hooded jacket",
+    "type": "jacket",
+    "gender": "male",
+    "styles": [
+      "casual"
+    ],
+    "price": 63.75,
+    "image": "30.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1344369002.html"
+  },
+  {
+    "id": "31",
+    "name": "Mole/Las Vegas Oversized Fit Printed zip-through hoodie",
+    "type": "hoodie",
+    "gender": "male",
+    "styles": [
+      "casual",
+      "sportwear"
+    ],
+    "price": 36.55,
+    "image": "31.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1337857003.html"
+  },
+  {
+    "id": "32",
+    "name": "Dark denim grey Denim trucker jacket",
+    "type": "denim jacket",
+    "gender": "male",
+    "styles": [
+      "casual"
+    ],
+    "price": 38.25,
+    "image": "32.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1352052001.html"
+  },
+  {
+    "id": "33",
+    "name": "Brown Loose Fit Sweatpants",
+    "type": "sweatpants",
+    "gender": "male",
+    "styles": [
+      "casual",
+      "sportwear"
+    ],
+    "price": 19.55,
+    "image": "33.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1302372009.html"
+  },
+  {
+    "id": "34",
+    "name": "Black/Striped Relaxed Fit Poplin trousers",
+    "type": "trousers",
+    "gender": "male",
+    "styles": [
+      "casual"
+    ],
+    "price": 17.0,
+    "image": "34.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1267683038.html"
+  },
+  {
+    "id": "35",
+    "name": "Blue/Striped Pyjama bottoms",
+    "type": "pyjama bottoms",
+    "gender": "male",
+    "styles": [
+      "pyjamas"
+    ],
+    "price": 19.55,
+    "image": "35.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1318164001.html"
+  },
+  {
+    "id": "36",
+    "name": "Yellow Slim Fit Cotton vest top",
+    "type": "vest top",
+    "gender": "male",
+    "styles": [
+      "casual",
+      "sportwear"
+    ],
+    "price": 11.05,
+    "image": "36.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1374069002.html"
+  },
+  {
+    "id": "37",
+    "name": "Dark green/Checked Patterned flannel pyjama bottoms",
+    "type": "pyjama bottoms",
+    "gender": "kids",
+    "styles": [
+      "pyjamas"
+    ],
+    "price": 8.5,
+    "image": "37.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1343659004.html"
+  },
+  {
+    "id": "38",
+    "name": "Grey marl/Dusty blue 2-pack cotton pyjama bottoms",
+    "type": "pyjama bottoms",
+    "gender": "kids",
+    "styles": [
+      "pyjamas"
+    ],
+    "price": 12.75,
+    "image": "38.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1339138002.html"
+  },
+  {
+    "id": "39",
+    "name": "Dusty khaki green Cotton Lounge Shirt",
+    "type": "lounge shirt",
+    "gender": "male",
+    "styles": [
+      "casual"
+    ],
+    "price": 22.95,
+    "image": "39.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1333985001.html"
+  },
+  {
+    "id": "40",
+    "name": "Striped Lilac/Black Loose Boxy Long-Sleeved T-shirt",
+    "type": "long-sleeved t-shirt",
+    "gender": "male",
+    "styles": [
+      "casual"
+    ],
+    "price": 20.4,
+    "image": "40.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1256964036.html"
+  },
+  {
+    "id": "41",
+    "name": "White Slim Fit Pima Cotton Tuxedo Shirt",
+    "type": "tuxedo shirt",
+    "gender": "male",
+    "styles": [
+      "party"
+    ],
+    "price": 32.3,
+    "image": "41.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1368508001.html"
+  },
+  {
+    "id": "42",
+    "name": "Black Regular Fit Wool-blend Tuxedo Trousers",
+    "type": "tuxedo trousers",
+    "gender": "male",
+    "styles": [
+      "party"
+    ],
+    "price": 38.25,
+    "image": "42.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1331651001.html"
+  },
+  {
+    "id": "43",
+    "name": "Dark blue/UNC Oversized Fit Printed Hockey Shirt",
+    "type": "hockey shirt",
+    "gender": "male",
+    "styles": [
+      "casual",
+      "sportwear"
+    ],
+    "price": 32.3,
+    "image": "43.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1364626002.html"
+  },
+  {
+    "id": "44",
+    "name": "Denim blue Baggy Barrel Jeans",
+    "type": "jeans",
+    "gender": "male",
+    "styles": [
+      "casual"
+    ],
+    "price": 36.55,
+    "image": "44.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1358034003.html"
+  },
+  {
+    "id": "45",
+    "name": "Navy blue/East Isles Club Relaxed Fit Resort Shirt",
+    "type": "resort shirt",
+    "gender": "male",
+    "styles": [
+      "casual"
+    ],
+    "price": 23.8,
+    "image": "45.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1349847001.html"
+  },
+  {
+    "id": "46",
+    "name": "Black/Patterned Relaxed Fit Resort Shirt",
+    "type": "resort shirt",
+    "gender": "male",
+    "styles": [
+      "casual"
+    ],
+    "price": 17.0,
+    "image": "46.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1325494011.html"
+  },
+  {
+    "id": "47",
+    "name": "Bright green Swim shorts",
+    "type": "swim shorts",
+    "gender": "male",
+    "styles": [
+      "casual",
+      "sportwear"
+    ],
+    "price": 11.05,
+    "image": "47.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1323144011.html"
+  },
+  {
+    "id": "48",
+    "name": "Dark khaki green Windproof & water-repellent puffer gilet",
+    "type": "puffer gilet",
+    "gender": "male",
+    "styles": [
+      "casual",
+      "sportwear"
+    ],
+    "price": 32.3,
+    "image": "48.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1342225002.html"
+  },
+  {
+    "id": "49",
+    "name": "Black Loose Fit Waffled sports T-shirt with DryMove™",
+    "type": "t-shirt",
+    "gender": "male",
+    "styles": [
+      "casual",
+      "sportwear"
+    ],
+    "price": 17.0,
+    "image": "49.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1366865001.html"
+  },
+  {
+    "id": "50",
+    "name": "Natural white Regular Fit Waffled sports shorts with DryMove™",
+    "type": "shorts",
+    "gender": "male",
+    "styles": [
+      "casual",
+      "sportwear"
+    ],
+    "price": 19.55,
+    "image": "50.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1367516002.html"
+  },
+  {
+    "id": "51",
+    "name": "Natural white Sports shorts with DryMove™",
+    "type": "shorts",
+    "gender": "male",
+    "styles": [
+      "casual",
+      "sportwear"
+    ],
+    "price": 17.0,
+    "image": "51.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1292771020.html"
+  },
+  {
+    "id": "52",
+    "name": "Mole Oversized Fit Sports hoodie with DryMove™",
+    "type": "hoodie",
+    "gender": "male",
+    "styles": [
+      "casual",
+      "sportwear"
+    ],
+    "price": 32.3,
+    "image": "52.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1352792001.html"
+  },
+  {
+    "id": "53",
+    "name": "Dark coffee Raincoat with StormMove™",
+    "type": "raincoat",
+    "gender": "male",
+    "styles": [
+      "casual",
+      "sportwear"
+    ],
+    "price": 55.25,
+    "image": "53.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1339929001.html"
+  },
+  {
+    "id": "54",
+    "name": "Dark khaki green Padded windproof & water-repellent jacket",
+    "type": "jacket",
+    "gender": "male",
+    "styles": [
+      "casual",
+      "sportwear"
+    ],
+    "price": 44.99,
+    "image": "54.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1344382002.html"
+  },
+  {
+    "id": "55",
+    "name": "Burgundy/365 Training Team Sleeveless Sports hoodie with DryMove™",
+    "type": "hoodie",
+    "gender": "male",
+    "styles": [
+      "casual",
+      "sportwear"
+    ],
+    "price": 23.8,
+    "image": "55.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1314814001.html"
+  },
+  {
+    "id": "56",
+    "name": "Red/Sports Archives Loose Fit Embroidered-motif nylon track jacket",
+    "type": "track jacket",
+    "gender": "male",
+    "styles": [
+      "casual",
+      "sportwear"
+    ],
+    "price": 63.75,
+    "image": "56.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1335855001.html"
+  },
+  {
+    "id": "57",
+    "name": "Black/Glacier Control Relaxed Fit Track pants",
+    "type": "track pants",
+    "gender": "male",
+    "styles": [
+      "casual",
+      "sportwear"
+    ],
+    "price": 36.55,
+    "image": "57.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1369078001.html"
+  },
+  {
+    "id": "58",
+    "name": "Red/Checked Relaxed Fit Cotton shirt",
+    "type": "shirt",
+    "gender": "male",
+    "styles": [
+      "casual"
+    ],
+    "price": 23.8,
+    "image": "58.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1351893006.html"
+  },
+  {
+    "id": "59",
+    "name": "Raspberry red/Scream Oversized Fit Printed zip-through hoodie",
+    "type": "hoodie",
+    "gender": "male",
+    "styles": [
+      "casual"
+    ],
+    "price": 38.25,
+    "image": "59.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1363605001.html"
+  },
+  {
+    "id": "60",
+    "name": "Anthracite grey/It Regular Fit Boxy printed cotton T-shirt",
+    "type": "t-shirt",
+    "gender": "male",
+    "styles": [
+      "casual"
+    ],
+    "price": 23.8,
+    "image": "60.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1363603002.html"
+  },
+  {
+    "id": "61",
+    "name": "White/Metallica Relaxed Fit Long-sleeved printed cotton T-shirt",
+    "type": "long-sleeved t-shirt",
+    "gender": "male",
+    "styles": [
+      "casual",
+      "party"
+    ],
+    "price": 23.8,
+    "image": "61.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1344627002.html"
+  },
+  {
+    "id": "62",
+    "name": "Khaki green Loose Fit Cargo trousers",
+    "type": "trousers",
+    "gender": "male",
+    "styles": [
+      "casual",
+      "sportwear"
+    ],
+    "price": 32.3,
+    "image": "62.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1344715003.html"
+  },
+  {
+    "id": "63",
+    "name": "Cold clay Slim Fit sports vest top with SoftMove™",
+    "type": "vest top",
+    "gender": "female",
+    "styles": [
+      "casual",
+      "sportwear"
+    ],
+    "price": 11.05,
+    "image": "63.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1333308008.html"
+  },
+  {
+    "id": "64",
+    "name": "Cold clay Warming sports leggings with Fleece SoftMove™",
+    "type": "leggings",
+    "gender": "female",
+    "styles": [
+      "casual",
+      "sportwear"
+    ],
+    "price": 28.05,
+    "image": "64.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1303187006.html"
+  },
+  {
+    "id": "65",
+    "name": "Yellow Sheer jersey midi dress",
+    "type": "dress",
+    "gender": "female",
+    "styles": [
+      "casual",
+      "party"
+    ],
+    "price": 32.3,
+    "image": "65.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1338532001.html"
+  },
+  {
+    "id": "66",
+    "name": "Butter yellow Sports wrap top in modal",
+    "type": "wrap top",
+    "gender": "female",
+    "styles": [
+      "casual",
+      "sportwear"
+    ],
+    "price": 19.55,
+    "image": "66.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1294765009.html"
+  },
+  {
+    "id": "67",
+    "name": "Light burgundy Zip-through sports jacket with SoftMove™",
+    "type": "sports jacket",
+    "gender": "female",
+    "styles": [
+      "casual",
+      "sportwear"
+    ],
+    "price": 23.8,
+    "image": "67.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1243210018.html"
+  },
+  {
+    "id": "68",
+    "name": "Pink Flared sports leggings with SoftMove™",
+    "type": "leggings",
+    "gender": "female",
+    "styles": [
+      "casual",
+      "sportwear"
+    ],
+    "price": 9.0,
+    "image": "68.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1276797013.html"
+  },
+  {
+    "id": "69",
+    "name": "Cherry red Hooded sports jacket with CoolMove™",
+    "type": "sports jacket",
+    "gender": "female",
+    "styles": [
+      "casual",
+      "sportwear"
+    ],
+    "price": 23.8,
+    "image": "69.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1360883001.html"
+  },
+  {
+    "id": "70",
+    "name": "Dusty purple Hybrid padded jacket with ThermoMove™",
+    "type": "jacket",
+    "gender": "female",
+    "styles": [
+      "casual",
+      "sportwear"
+    ],
+    "price": 32.3,
+    "image": "70.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1283775004.html"
+  },
+  {
+    "id": "71",
+    "name": "Mid blush pink Sports top with SoftMove™",
+    "type": "sports top",
+    "gender": "female",
+    "styles": [
+      "casual",
+      "sportwear"
+    ],
+    "price": 19.55,
+    "image": "71.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1324738003.html"
+  },
+  {
+    "id": "72",
+    "name": "Amazonite blue Cropped long-sleeved yoga top",
+    "type": "yoga top",
+    "gender": "female",
+    "styles": [
+      "casual",
+      "sportwear"
+    ],
+    "price": 9.0,
+    "image": "72.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1324743003.html"
+  },
+  {
+    "id": "73",
+    "name": "Amazonite blue Twist-detail vest top with SoftMove™",
+    "type": "vest top",
+    "gender": "female",
+    "styles": [
+      "casual",
+      "sportwear"
+    ],
+    "price": 19.55,
+    "image": "73.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1324741002.html"
+  },
+  {
+    "id": "74",
+    "name": "Blush Sports vest top with DryMove™",
+    "type": "vest top",
+    "gender": "female",
+    "styles": [
+      "casual",
+      "sportwear"
+    ],
+    "price": 17.0,
+    "image": "74.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1329614002.html"
+  },
+  {
+    "id": "75",
+    "name": "Navy blue Fine-knit collared jumper",
+    "type": "jumper",
+    "gender": "female",
+    "styles": [
+      "casual"
+    ],
+    "price": 32.99,
+    "image": "75.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1211190010.html"
   }
 ]
