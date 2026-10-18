@@ -443,7 +443,7 @@
     "id": "37",
     "name": "Dark green/Checked Patterned flannel pyjama bottoms",
     "type": "pyjama bottoms",
-    "gender": "kids",
+    "gender": "male",
     "styles": [
       "pyjamas"
     ],
@@ -455,7 +455,7 @@
     "id": "38",
     "name": "Grey marl/Dusty blue 2-pack cotton pyjama bottoms",
     "type": "pyjama bottoms",
-    "gender": "kids",
+    "gender": "male",
     "styles": [
       "pyjamas"
     ],
@@ -932,5 +932,539 @@
     "price": 32.99,
     "image": "75.avif",
     "url": "https://www2.hm.com/en_gb/productpage.1211190010.html"
+  },
+  {
+    "id": "76",
+    "name": "Light dusty pink Loose-fit cardigan",
+    "type": "cardigan",
+    "gender": "female",
+    "styles": [
+      "casual"
+    ],
+    "price": 15.3,
+    "image": "76.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1239431033.html"
+  },
+  {
+    "id": "77",
+    "name": "Dusty brown/Snakeskin pattern Cotton denim overshirt",
+    "type": "overshirt",
+    "gender": "female",
+    "styles": [
+      "casual"
+    ],
+    "price": 29.75,
+    "image": "77.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1358785002.html"
+  },
+  {
+    "id": "78",
+    "name": "Black Long lace skirt",
+    "type": "skirt",
+    "gender": "female",
+    "styles": [
+      "casual",
+      "party"
+    ],
+    "price": 63.75,
+    "image": "78.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1356112001.html"
+  },
+  {
+    "id": "79",
+    "name": "Bright purple Twist-detail crop top",
+    "type": "crop top",
+    "gender": "female",
+    "styles": [
+      "casual",
+      "party"
+    ],
+    "price": 23.8,
+    "image": "79.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1361429001.html"
+  },
+  {
+    "id": "80",
+    "name": "Bright purple Viscose-blend maxi skirt",
+    "type": "maxi skirt",
+    "gender": "female",
+    "styles": [
+      "casual",
+      "party"
+    ],
+    "price": 38.25,
+    "image": "80.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1361430001.html"
+  },
+  {
+    "id": "81",
+    "name": "Black Crossbody bag",
+    "type": "crossbody bag",
+    "gender": "female",
+    "styles": [
+      "casual",
+      "party"
+    ],
+    "price": 19.55,
+    "image": "81.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1359942001.html"
+  },
+  {
+    "id": "82",
+    "name": "Dark mole Oversized teddy jacket",
+    "type": "jacket",
+    "gender": "female",
+    "styles": [
+      "casual"
+    ],
+    "price": 39.99,
+    "image": "82.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1345670005.html"
+  },
+  {
+    "id": "83",
+    "name": "Light beige Knitted gloves",
+    "type": "gloves",
+    "gender": "female",
+    "styles": [
+      "casual"
+    ],
+    "price": 8.5,
+    "image": "83.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1360657003.html"
+  },
+  {
+    "id": "84",
+    "name": "Dark denim blue/Atelier Embroidered-motif twill cap",
+    "type": "cap",
+    "gender": "female",
+    "styles": [
+      "casual"
+    ],
+    "price": 11.05,
+    "image": "84.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1232067072.html"
+  },
+  {
+    "id": "85",
+    "name": "Dark beige Double-breasted trench coat",
+    "type": "trench coat",
+    "gender": "female",
+    "styles": [
+      "casual",
+      "party"
+    ],
+    "price": 54.99,
+    "image": "85.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1360152001.html"
+  },
+  {
+    "id": "86",
+    "name": "Brown Crossbody bag",
+    "type": "crossbody bag",
+    "gender": "female",
+    "styles": [
+      "casual",
+      "party"
+    ],
+    "price": 23.8,
+    "image": "86.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1342459004.html"
+  },
+  {
+    "id": "87",
+    "name": "Burgundy Crossbody bag",
+    "type": "crossbody bag",
+    "gender": "female",
+    "styles": [
+      "casual",
+      "party"
+    ],
+    "price": 23.8,
+    "image": "87.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1290237002.html"
+  },
+  {
+    "id": "88",
+    "name": "Dusty blue Velvet ballet flats",
+    "type": "flats",
+    "gender": "female",
+    "styles": [
+      "casual",
+      "party"
+    ],
+    "price": 19.55,
+    "image": "88.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1345792003.html"
+  },
+  {
+    "id": "89",
+    "name": "Burgundy/Striped Fine-knit boat-neck top",
+    "type": "top",
+    "gender": "female",
+    "styles": [
+      "casual"
+    ],
+    "price": 23.8,
+    "image": "89.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1371946001.html"
+  },
+  {
+    "id": "90",
+    "name": "Light beige/Blue Trainers",
+    "type": "trainers",
+    "gender": "female",
+    "styles": [
+      "casual"
+    ],
+    "price": 28.05,
+    "image": "90.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1273075019.html"
+  },
+  {
+    "id": "91",
+    "name": "Brown Leather sandals",
+    "type": "sandals",
+    "gender": "female",
+    "styles": [
+      "casual",
+      "party"
+    ],
+    "price": 32.3,
+    "image": "91.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1320691001.html"
+  },
+  {
+    "id": "92",
+    "name": "Dusty blue Chunky trainers",
+    "type": "trainers",
+    "gender": "female",
+    "styles": [
+      "casual"
+    ],
+    "price": 32.3,
+    "image": "92.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1208972014.html"
+  },
+  {
+    "id": "93",
+    "name": "Black Visor sunglasses",
+    "type": "sunglasses",
+    "gender": "female",
+    "styles": [
+      "casual",
+      "sportwear"
+    ],
+    "price": 17.0,
+    "image": "93.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1349452004.html"
+  },
+  {
+    "id": "94",
+    "name": "Beige Warm-lined slippers",
+    "type": "slippers",
+    "gender": "female",
+    "styles": [
+      "pyjamas"
+    ],
+    "price": 17.0,
+    "image": "94.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1341922001.html"
+  },
+  {
+    "id": "95",
+    "name": "Black Sports crossbody bag",
+    "type": "crossbody bag",
+    "gender": "male",
+    "styles": [
+      "casual",
+      "sportwear"
+    ],
+    "price": 28.05,
+    "image": "95.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1297693001.html"
+  },
+  {
+    "id": "96",
+    "name": "Khaki green/Patterned Nylon crossbody bag",
+    "type": "crossbody bag",
+    "gender": "male",
+    "styles": [
+      "casual"
+    ],
+    "price": 11.05,
+    "image": "96.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1346350001.html"
+  },
+  {
+    "id": "97",
+    "name": "Dark green Regular Fit Oxford shirt",
+    "type": "shirt",
+    "gender": "male",
+    "styles": [
+      "casual",
+      "party"
+    ],
+    "price": 17.0,
+    "image": "97.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1257417034.html"
+  },
+  {
+    "id": "98",
+    "name": "Navy blue/Striped Regular Fit Zip-top jumper",
+    "type": "jumper",
+    "gender": "male",
+    "styles": [
+      "casual"
+    ],
+    "price": 23.8,
+    "image": "98.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1341531006.html"
+  },
+  {
+    "id": "99",
+    "name": "Beige Trainers",
+    "type": "trainers",
+    "gender": "male",
+    "styles": [
+      "casual"
+    ],
+    "price": 23.8,
+    "image": "99.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1289931008.html"
+  },
+  {
+    "id": "100",
+    "name": "Dark grey Chunky trainers",
+    "type": "trainers",
+    "gender": "male",
+    "styles": [
+      "casual"
+    ],
+    "price": 46.75,
+    "image": "100.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1325873007.html"
+  },
+  {
+    "id": "101",
+    "name": "White Trainers",
+    "type": "trainers",
+    "gender": "male",
+    "styles": [
+      "casual"
+    ],
+    "price": 28.05,
+    "image": "101.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1338515002.html"
+  },
+  {
+    "id": "102",
+    "name": "Denim blue Regular Jeans",
+    "type": "jeans",
+    "gender": "male",
+    "styles": [
+      "casual"
+    ],
+    "price": 21.25,
+    "image": "102.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1311674007.html"
+  },
+  {
+    "id": "103",
+    "name": "Denim grey Loose Jeans",
+    "type": "jeans",
+    "gender": "male",
+    "styles": [
+      "casual"
+    ],
+    "price": 29.75,
+    "image": "103.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1340674003.html"
+  },
+  {
+    "id": "104",
+    "name": "Dark green Loose Fit Hoodie",
+    "type": "hoodie",
+    "gender": "male",
+    "styles": [
+      "casual",
+      "sportwear"
+    ],
+    "price": 17.0,
+    "image": "104.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.0970819135.html"
+  },
+  {
+    "id": "105",
+    "name": "Black Leather crossbody bag",
+    "type": "crossbody bag",
+    "gender": "male",
+    "styles": [
+      "casual",
+      "party"
+    ],
+    "price": 102.0,
+    "image": "105.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1356886001.html"
+  },
+  {
+    "id": "106",
+    "name": "Dark blue/Las Vegas Oversized Fit Printed hoodie",
+    "type": "hoodie",
+    "gender": "male",
+    "styles": [
+      "casual"
+    ],
+    "price": 32.3,
+    "image": "106.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1354978001.html"
+  },
+  {
+    "id": "107",
+    "name": "Black Hooded jacket",
+    "type": "jacket",
+    "gender": "male",
+    "styles": [
+      "casual",
+      "sportwear"
+    ],
+    "price": 63.75,
+    "image": "107.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1344369001.html"
+  },
+  {
+    "id": "108",
+    "name": "Bright red Collared cotton jacket",
+    "type": "jacket",
+    "gender": "male",
+    "styles": [
+      "casual"
+    ],
+    "price": 32.3,
+    "image": "108.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1317985006.html"
+  },
+  {
+    "id": "109",
+    "name": "Red/Honda Embroidered-motif cotton twill cap",
+    "type": "cap",
+    "gender": "male",
+    "styles": [
+      "casual"
+    ],
+    "price": 17.0,
+    "image": "109.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1361471001.html"
+  },
+  {
+    "id": "110",
+    "name": "Red Relaxed Fit Zip-top sweatshirt",
+    "type": "sweatshirt",
+    "gender": "male",
+    "styles": [
+      "casual",
+      "sportwear"
+    ],
+    "price": 23.8,
+    "image": "110.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1365967004.html"
+  },
+  {
+    "id": "111",
+    "name": "Brown/Out Of Office Cotton twill cap",
+    "type": "cap",
+    "gender": "male",
+    "styles": [
+      "casual"
+    ],
+    "price": 10.2,
+    "image": "111.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1324090010.html"
+  },
+  {
+    "id": "112",
+    "name": "Light beige marl Relaxed Fit Sweater vest",
+    "type": "sweater vest",
+    "gender": "male",
+    "styles": [
+      "casual",
+      "party"
+    ],
+    "price": 23.8,
+    "image": "112.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1341520002.html"
+  },
+  {
+    "id": "113",
+    "name": "Light beige Slim Fit Linen suit waistcoat",
+    "type": "waistcoat",
+    "gender": "male",
+    "styles": [
+      "party"
+    ],
+    "price": 28.05,
+    "image": "113.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1259207001.html"
+  },
+  {
+    "id": "114",
+    "name": "Dark khaki green Regular Fit Corduroy shirt",
+    "type": "shirt",
+    "gender": "male",
+    "styles": [
+      "casual"
+    ],
+    "price": 19.55,
+    "image": "114.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1289456018.html"
+  },
+  {
+    "id": "115",
+    "name": "Light beige/Major League Corduroy workwear overshirt",
+    "type": "overshirt",
+    "gender": "male",
+    "styles": [
+      "casual"
+    ],
+    "price": 38.25,
+    "image": "115.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1354538001.html"
+  },
+  {
+    "id": "116",
+    "name": "Beige/Collective Works Rib-knit wool-blend beanie",
+    "type": "beanie",
+    "gender": "male",
+    "styles": [
+      "casual"
+    ],
+    "price": 12.99,
+    "image": "116.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1371014002.html"
+  },
+  {
+    "id": "117",
+    "name": "Red Wool-blend rib-knit hat",
+    "type": "hat",
+    "gender": "male",
+    "styles": [
+      "casual"
+    ],
+    "price": 10.2,
+    "image": "117.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1362928003.html"
+  },
+  {
+    "id": "118",
+    "name": "Red/East Isles Club Relaxed Fit Printed T-shirt",
+    "type": "t-shirt",
+    "gender": "male",
+    "styles": [
+      "casual"
+    ],
+    "price": 8.5,
+    "image": "118.avif",
+    "url": "https://www2.hm.com/en_gb/productpage.1344928012.html"
   }
 ]
+
