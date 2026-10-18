@@ -70,6 +70,7 @@ export default function App() {
 
   const handleSubmitDrawing = async (drawing) => {
     const { item } = target
+    setResult({ item, drawing })
     setPhase('judging')
     try {
       const res = await scoreDrawing({ itemId: item.id, drawing })
@@ -125,8 +126,9 @@ export default function App() {
           {phase === 'draw' && (
             <DrawCanvas item={target.item} swipesAgo={target.swipesAgo} onSubmit={handleSubmitDrawing} />
           )}
-          {phase === 'judging' && <p className="hint">Judging&hellip;</p>}
-          {phase === 'result' && <JudgeResult result={result} />}
+          {(phase === 'judging' || phase === 'result') && (
+            <JudgeResult result={result} judging={phase === 'judging'} />
+          )}
           {phase === 'basket' && (
             <Basket items={basket} onClose={deck.length > 0 ? () => setPhase('swipe') : null} />
           )}

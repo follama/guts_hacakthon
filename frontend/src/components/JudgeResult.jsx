@@ -1,6 +1,6 @@
 import { assetUrl } from '../lib/api'
 
-export default function JudgeResult({ result }) {
+export default function JudgeResult({ result, judging }) {
   const { item, drawing, passed, judged } = result
 
   return (
@@ -16,12 +16,18 @@ export default function JudgeResult({ result }) {
         </figure>
       </div>
 
-      <p className={`verdict ${passed ? 'pass' : 'fail'}`}>
-        {passed
-          ? 'Well done, you seem to remember what the item was. Added to the basket just for you!'
-          : "That was super inaccurate, guess you don't want it as much as you seemed like."}
-      </p>
-      {!judged && <p className="hint">Judge unavailable, so you keep it</p>}
+      {judging ? (
+        <p className="verdict">Judging&hellip;</p>
+      ) : (
+        <>
+          <p className={`verdict ${passed ? 'pass' : 'fail'}`}>
+            {passed
+              ? 'Well done, you seem to remember what the item was. Added to the basket just for you!'
+              : "That was super inaccurate, guess you don't want it as much as you seemed like."}
+          </p>
+          {!judged && <p className="hint">Judge unavailable, so you keep it</p>}
+        </>
+      )}
     </div>
   )
 }
