@@ -4,7 +4,7 @@ export const DRAW_TIME_SECONDS = 60
 export const RESULT_SECONDS = 4
 export const SWIPE_THRESHOLD = 90
 
-export const COLOURS = ['#1a1a1a', '#e53935', '#1e88e5', '#43a047', '#fdd835', '#8d6e63']
+export const COLOURS = ['#1a1a1a', '#b71c1c', '#f48fb1', '#1e88e5', '#43a047', '#fdd835', '#8d6e63']
 
 export function shuffle(items) {
   const out = [...items]
