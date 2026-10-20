@@ -1,6 +1,6 @@
 # FitSketch
 
-**Live demo: [fitsketch.netlify.app](https://fitsketch.netlify.app/)**
+**Live demo: [fitsketch.netlify.app](https://fitsketch.netlify.app/)** (live until 07.11.2026)
 
 A fashion app that tests whether you actually like something — or just swiped right by habit. You can only keep an item if you can draw it from memory.
 
@@ -59,7 +59,7 @@ cp .env.example .env          # then add your GEMINI_API_KEY
 uvicorn app.main:app --reload
 ```
 
-Get a free Gemini API key at [aistudio.google.com/apikey](https://aistudio.google.com/apikey). Without it the game runs but every drawing automatically passes.
+Add your API key to backend/.env. We used a free Gemini API key (you can get it at [aistudio.google.com/apikey](https://aistudio.google.com/apikey)). Without it the game runs but every drawing automatically passes.
 
 **2. Frontend** (runs on port 5173, proxies `/api` to the backend)
 
@@ -69,5 +69,6 @@ npm install
 npm run dev
 ```
 
-Open `http://localhost:5173`. To test on your computer or phone on the same network, run `npm run dev -- --host`.
+Open `http://localhost:5173`.
+To test on your computer or phone on the same network, run `npm run dev -- --host`.
 
